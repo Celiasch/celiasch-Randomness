@@ -1231,7 +1231,7 @@ GameObject:
   - component: {fileID: 1309939059}
   - component: {fileID: 1309939060}
   m_Layer: 0
-  m_Name: CirclColor
+  m_Name: CircleColor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1553,7 +1553,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 11500000, guid: 8678cea33f1508946a141972975b603a, type: 3}
         m_MethodName: 
         m_Mode: 1
         m_Arguments:

@@ -23,14 +23,14 @@ public class Updater : MonoBehaviour {
         colorList = new List<Color> {
             Color.red,
             Color.blue,
-            Color.green
+            Color.green, //Beistrich fehlte
             Color.magenta
         };
     }
 
     public void UpdateTextWithInspectorInput()
     {
-        Text.text = inputtext;
+        text.text = inputtext; //muss klein geschrieben werden weil sonst Klasse
     }
 
     public void UpdateCircleColor()
@@ -48,7 +48,7 @@ public class Updater : MonoBehaviour {
     {
         Transform circTransform = circlePosition.GetComponent<Transform>();
         
-        float randomPosX = UnityEngine.Random.Next(5, 433);
+        float randomPosX = UnityEngine.Random.Range(5, 433); //Wenn Klasse Random genutzt wird, muss .Range statt .Next
         circTransform.localPosition = new Vector3(randomPosX, circTransform.localPosition.y, circTransform.localPosition.z);
     }
 
